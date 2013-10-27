@@ -31,7 +31,7 @@
 00000000000i[     ]   SB16 support: no
 00000000000i[     ]   USB support: no
 00000000000i[     ]   VGA extension support: vbe
-00000000000i[MEM0 ] allocated memory at 0x7f1d1febd010. after alignment, vector=0x7f1d1febe000
+00000000000i[MEM0 ] allocated memory at 0x7f65e0578010. after alignment, vector=0x7f65e0579000
 00000000000i[MEM0 ] 32.00MB
 00000000000i[MEM0 ] mem block size = 0x00100000, blocks=32
 00000000000i[MEM0 ] rom at 0xe0000/131072 ('/usr/local/share/bochs/BIOS-bochs-latest')
@@ -42,7 +42,7 @@
 00000000000i[DEV  ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[     ] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS ] Using local time for initial clock
-00000000000i[CMOS ] Setting initial clock to: Thu Oct 17 20:37:01 2013 (time0=1382022421)
+00000000000i[CMOS ] Setting initial clock to: Sun Oct 27 19:19:53 2013 (time0=1382881793)
 00000000000i[     ] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA  ] channel 4 used by cascade
 00000000000i[     ] init_dev of 'pic' plugin device by virtual method
@@ -275,26 +275,26 @@
 00012041592i[CPU0 ] math_abort: MSDOS compatibility FPU exception
 00012050689e[DEV  ] read from port 0x0000 with len 2 returns 0xffff
 00012051026i[CPU0 ] math_abort: MSDOS compatibility FPU exception
-07884770000p[XGUI ] >>PANIC<< POWER button turned off.
-07884770000i[CPU0 ] CPU is in real mode (active)
-07884770000i[CPU0 ] CS.mode = 16 bit
-07884770000i[CPU0 ] SS.mode = 16 bit
-07884770000i[CPU0 ] EFER   = 0x00000000
-07884770000i[CPU0 ] | EAX=00007550  EBX=00000505  ECX=00000486  EDX=00000505
-07884770000i[CPU0 ] | ESP=0000af02  EBP=0000f1a6  ESI=0000fff9  EDI=00002ba6
-07884770000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf sf zf AF PF cf
-07884770000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
-07884770000i[CPU0 ] |  CS:0005( 1e00| 0|  0) 00000050 0000ffff 0 0
-07884770000i[CPU0 ] |  DS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
-07884770000i[CPU0 ] |  SS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
-07884770000i[CPU0 ] |  ES:0500( 0000| 0|  0) 00005000 0000ffff 0 0
-07884770000i[CPU0 ] |  FS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
-07884770000i[CPU0 ] |  GS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
-07884770000i[CPU0 ] | EIP=0000214b (0000214b)
-07884770000i[CPU0 ] | CR0=0x60000010 CR2=0x00000000
-07884770000i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
-07884770000i[CPU0 ] 0x0000214b>> add ax, 0x0005 : 050500
-07884770000i[CMOS ] Last time is 1382030305 (Thu Oct 17 22:48:25 2013)
-07884770000i[XGUI ] Exit
-07884770000i[     ] restoring default signal behavior
-07884770000i[CTRL ] quit_sim called with exit code 1
+00413596000i[     ] cpu loop quit, shutting down simulator
+00413596000i[CPU0 ] CPU is in real mode (active)
+00413596000i[CPU0 ] CS.mode = 16 bit
+00413596000i[CPU0 ] SS.mode = 16 bit
+00413596000i[CPU0 ] EFER   = 0x00000000
+00413596000i[CPU0 ] | EAX=0000c98e  EBX=00000505  ECX=00000486  EDX=00000505
+00413596000i[CPU0 ] | ESP=0000af02  EBP=0000f1a6  ESI=0000fff9  EDI=0000c50a
+00413596000i[CPU0 ] | IOPL=0 id vip vif ac vm rf nt of df if tf SF zf af pf cf
+00413596000i[CPU0 ] | SEG sltr(index|ti|rpl)     base    limit G D
+00413596000i[CPU0 ] |  CS:0005( 1e00| 0|  0) 00000050 0000ffff 0 0
+00413596000i[CPU0 ] |  DS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
+00413596000i[CPU0 ] |  SS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
+00413596000i[CPU0 ] |  ES:0500( 0000| 0|  0) 00005000 0000ffff 0 0
+00413596000i[CPU0 ] |  FS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
+00413596000i[CPU0 ] |  GS:0000( 0000| 0|  0) 00000000 0000ffff 0 0
+00413596000i[CPU0 ] | EIP=00002144 (00002144)
+00413596000i[CPU0 ] | CR0=0x60000010 CR2=0x00000000
+00413596000i[CPU0 ] | CR3=0x00000000 CR4=0x00000000
+00413596000i[CPU0 ] 0x00002144>> scasw ax, word ptr es:[di] : AF
+00413596000i[CMOS ] Last time is 1382882206 (Sun Oct 27 19:26:46 2013)
+00413596000i[XGUI ] Exit
+00413596000i[     ] restoring default signal behavior
+00413596000i[CTRL ] quit_sim called with exit code 1
