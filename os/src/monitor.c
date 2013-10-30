@@ -55,8 +55,8 @@ static void scroll()
 void monitor_put(char c)
 {
     // The background colour is black (0), the foreground is white (15).
-    u8int backColour = 0;
-    u8int foreColour = 15;
+    u8int backColour = 4;
+    u8int foreColour = 12;
 
     // The attribute byte is made up of two nibbles - the lower being the 
     // foreground colour, and the upper the background colour.
